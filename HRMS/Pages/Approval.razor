@@ -1,0 +1,169 @@
+﻿@page "/approve"
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
+@inject IJSRuntime JSRuntime
+@using MudExtensions
+@using HRMS.Components
+@inherits BaseComponents
+
+<MudContainer Class="mt-7 mb-5">
+	<MudContainer Class="mt-7">
+		<MudGrid Class="mt-7 leave">
+			<MudItem lg="6" md="6" sm="6" xs="12">
+				<h4 class="leavelist "> Leave Mangement</h4>
+			</MudItem>
+			<MudItem Class="btnleave" lg="6" md="6" sm="6" xs="12">
+				<MudButton Variant="Variant.Outlined" Class="buttonstyle mr-2" @onclick="GoBack"><i class="fa-solid fa-chevron-left"></i></MudButton>
+				<MudButton Class="buttonstyle" @onclick="OpenDialog" StartIcon="@Icons.Material.Filled.Add" Variant="Variant.Filled">Apply</MudButton>
+			</MudItem>
+		</MudGrid>
+	</MudContainer>
+
+</MudContainer>
+
+<MudContainer>
+	<MudGrid>
+
+
+		@foreach (var item in chartmodel)
+		{
+
+			<MudItem lg="4" md="4" xs="12" sm="6">
+				<MudPaper Class="piechart p-4">
+					<MudGrid>
+						<MudItem lg="6" md="6" sm="6" xs="6">
+							<MudText Class="mx-2">@item.LeaveTypename</MudText>
+						</MudItem>
+						<MudItem lg="6" md="6" sm="6" xs="6">
+							<MudText Class="ms-2 mt-1" Style="font-size:10px;padding-left:10px;"> Consumed Leaves</MudText>
+							<MudText Class="ms-2" Style="font-fize:30px;padding-left:10px;">@item.Leave Days</MudText>
+						</MudItem>
+					</MudGrid>
+
+				</MudPaper>
+			</MudItem>
+		}
+
+
+		<MudItem lg="4" md="4" xs="12" sm="6">
+			<MudPaper Class="piechart p-4">
+				<MudGrid>
+					@foreach (var item in AnnualLeaveCount)
+					{
+						if (item.Leavedetails == "Taken Leave")
+						{
+
+							<MudItem lg="6" md="6" sm="6" xs="6">
+								<MudText Class="ms-2 mt-1" Style="font-size:10px;padding-left:10px;">@item.Leavedetails</MudText>
+								<MudText Class="mx-2 px-4 ms-2">@item.EmpLeave Days</MudText>
+							</MudItem>
+
+						}
+					}
+					@foreach (var item in AnnualLeaveCount)
+					{
+						if (item.Leavedetails == "Remaining Leave")
+						{
+
+							<MudItem lg="6" md="6" sm="6" xs="6">
+								<MudText Class="ms-2 mt-1" Style="font-size:10px;padding-left:10px;">@item.Leavedetails</MudText>
+								<MudText Class="mx-2 px-4 ms-2">@item.EmpTotalLeave Days</MudText>
+							</MudItem>
+
+						}
+					}
+				</MudGrid>
+
+			</MudPaper>
+		</MudItem>
+
+	</MudGrid>
+	<MudGrid>
+		<MudItem Class="leavehistory" lg="12" md="12" xs="12" sm="12">
+			<MudText Class="leavetype" Style="font-size:20px;">Leave History</MudText>
+		</MudItem>
+		<MudItem lg="12" md="12" xs="12" sm="12">
+			<MudDataGrid Class="tablestyle" T="HRMS.Model.ListModel" Items="@SingleLeaveList" Hover="true" Bordered=true RowsPerPage="5">
+				<Columns>
+					<PropertyColumn Property="x => x.Leavetypename" Title="Leave type" Style="font-style:bold;" />
+					<PropertyColumn Property="x => x.StartDate" Title="Startdate" Format="dd-MM-yyyy" />
+					<PropertyColumn Property="x => x.EndDate" Title="End date" Format="dd-MM-yyyy" />
+					<PropertyColumn Property="x => x.Reason" Title="Reason" />
+					<PropertyColumn Property="x => x.Status" Title="Status" />
+				</Columns>
+				<PagerContent>
+					<MudDataGridPager T="HRMS.Model.ListModel"></MudDataGridPager>
+				</PagerContent>
+			</MudDataGrid>
+		</MudItem>
+	</MudGrid>
+</MudContainer>
+
+
+
+
+<style>
+	.btnleave {
+		display: flex;
+		justify-content: end;
+	}
+
+	@@media(max-width:767px) {
+		.leave {
+			flex-flow: column-reverse;
+		}
+
+		.btnleave {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.leavetype {
+		font-weight: 400;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.leavehistory {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.datepicker {
+		justify-content: center;
+		diaplay: flex;
+		align-items: center;
+		text-align: center;
+		align-self: center;
+	}
+
+	.mud-table-cell {
+		padding: 9px;
+	}
+
+	.mud-grid-spacing-xs-3 > .mud-grid-item {
+		padding: 9px;
+	}
+
+	.mud-table-root .mud-table-head .mud-table-cell {
+		font-weight: bold;
+	}
+
+	.mud-table-root .mud-table-head {
+		background-color: darkgray;
+	}
+
+	.donutstyle {
+		color: black;
+		transition: 0.4s ease-in-out;
+	}
+
+		.donutstyle:hover {
+			scale: 1.03;
+			transition: 0.4s ease-in-out;
+			cursor: pointer;
+		}
+</style>

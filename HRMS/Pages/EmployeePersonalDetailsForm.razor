@@ -1,0 +1,135 @@
+﻿@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@page "/EmployeePersonalDetailsForm"
+@inject ISnackbar Snackbar
+
+<div class="container">
+	<MudContainer>
+		<MudText Typo="Typo.h4" Class="my-10 d-flex">
+			Employee Onboarding Form
+
+			<MudSpacer />
+			
+		</MudText>
+	</MudContainer>
+
+
+	<MudPaper>
+		<MudForm @ref="form">
+			<MudContainer>
+				<MudText Typo="Typo.h4" Class="d-flex justify-content-center align-content-center my-2">Employee Personal Details</MudText>
+				<MudGrid>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">PG Collage Name</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Pgcollagename" Margin="Margin.Dense" Placeholder="Collage Name" For="()=>obj3.Pgcollagename"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">PG Course</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Pgcourse" Margin="Margin.Dense" Placeholder="Course" For="()=>obj3.Pgcourse"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course Start Date</MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="Start Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course End Date  </MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="End Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">UG Collage Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.ugcollagename" Margin="Margin.Dense" Placeholder="Collage Name" For="()=>obj3.ugcollagename"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">UG Course<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.ugcourse" Margin="Margin.Dense" Placeholder="Course" For="()=>obj3.ugcourse"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course Start Date<span class="requriedcolor">*</span></MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="Start Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course End Date <span class="requriedcolor">*</span> </MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="End Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">12th School Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Hsrschoolname" Margin="Margin.Dense" Placeholder="Collage Name" For="()=>obj3.Hsrschoolname"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">12th Course<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Hsrcourse" Margin="Margin.Dense" Placeholder="Course" For="()=>obj3.Hsrcourse"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course Start Date<span class="requriedcolor">*</span></MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="Start Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course End Date <span class="requriedcolor">*</span> </MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="End Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">10th School Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Sslcschoolname" Margin="Margin.Dense" Placeholder="Collage Name" For="()=>obj3.Sslcschoolname"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course Start Date<span class="requriedcolor">*</span></MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="Start Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Course End Date<span class="requriedcolor">*</span>  </MudText>
+						<MudDatePicker PickerVariant="PickerVariant.Dialog" Placeholder="End Date" Variant="Variant.Outlined" DateFormat="yyyy/MM/dd" Margin="Margin.Dense" />
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Emergency Contact</MudText>
+						<MudTextField T="string" Variant="Variant.Outlined" @bind-Value="@obj3.EmergencyContact" Margin="Margin.Dense" Placeholder="Emergency Contact" For="()=>obj3.EmergencyContact"></MudTextField>
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Relationship</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Relation" Margin="Margin.Dense" Placeholder="Relationship" For="()=>obj3.Relation"></MudTextField>
+					</MudItem>
+
+					<MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end">
+						<MudButton Variant="Variant.Outlined" Class="d-flex justify-content-center align-content-center" Color="@MudBlazor.Color.Primary" OnClick="onclick">Next</MudButton>
+					</MudItem>
+				</MudGrid>
+			</MudContainer>
+		</MudForm>
+	</MudPaper>
+</div>
+@code {
+	Onboardingform obj3 = new Onboardingform();
+	MudForm form;
+	bool success;
+
+	void onclick()
+	{
+		NavigationManager.NavigateTo("/EmployeeBankDetails");
+		Snackbar.Add("Form Submitted Successfully", Severity.Success);
+	}
+
+	private async Task GoBack()
+	{
+		await JSRuntime.InvokeVoidAsync("history.back");
+	}
+
+}
+<style>
+	@@media Screen and(max-width:767px) {
+		.headingtitle {
+			font-size: 8px;
+		}
+	}
+
+	.requriedcolor {
+		color: red;
+		margin-left: 5px;
+	}
+</style>

@@ -1,0 +1,215 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = HRMS
+build_property.RootNamespace = HRMS
+build_property.ProjectDir = C:\Users\Gokul\Desktop\HRMS 11-06 (Final)\HRMS\HRMS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Gokul\Desktop\HRMS 11-06 (Final)\HRMS\HRMS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Layout/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Addemployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkZW1wbG95ZWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/AddHoliday.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkSG9saWRheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Addproject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkcHJvamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Addtask.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkdGFzay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/AppBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Applyleave.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbHlsZWF2ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Approval.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwcm92YWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Attendance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXR0ZW5kYW5jZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlUGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Client.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/CompanyPolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFueVBvbGljeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Completedproject.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxldGVkcHJvamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Deleteemployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlZW1wbG95ZWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/EditProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFByb2ZpbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Editsalary.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdHNhbGFyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Employee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/EmployeeBankDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVCYW5rRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Employeeonboarding.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVvbmJvYXJkaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/EmployeePersonalDetailsForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVQZXJzb25hbERldGFpbHNGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ForgetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ2V0UGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Generateslip.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhdGVzbGlwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Holidays.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9saWRheXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/HrPayroll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHJQYXlyb2xsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Job Application Form.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iIEFwcGxpY2F0aW9uIEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Payroll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5cm9sbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Recruiterpage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjcnVpdGVycGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Reimbursement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVpbWJ1cnNlbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ReimbursementClaim.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVpbWJ1cnNlbWVudENsYWltLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ReimbursementHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVpbWJ1cnNlbWVudEhpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ReimbursementRequest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVpbWJ1cnNlbWVudFJlcXVlc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ReimbursementS.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVpbWJ1cnNlbWVudFMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Task1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFzazEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/TeamMembers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbU1lbWJlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Ticket.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/TicketDescription.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0RGVzY3JpcHRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/TicketRaise.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0UmFpc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/ViewTicket.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1RpY2tldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Pages/Voluntaryresignationform.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50YXJ5cmVzaWduYXRpb25mb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-pel2oakm23
+
+[C:/Users/Gokul/Desktop/HRMS 11-06 (Final)/HRMS/HRMS/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-scvttmuhy1

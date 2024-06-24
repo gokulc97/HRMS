@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursementrequest.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursementrequest.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\companypolicy.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\companypolicy.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursementhistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursementhistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursements.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursements.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursements.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursements.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursementrequest.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursementrequest.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|c:\\users\\gokul\\desktop\\hrms 11-06 (final)\\hrms\\hrms\\pages\\reimbursementhistory.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7005E14-D7CB-44A2-AB4F-011F7BBF36FF}|HRMS.csproj|solutionrelative:pages\\reimbursementhistory.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 433,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReimbursementRequest.razor",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementRequest.razor",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementRequest.razor",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementRequest.razor",
+              "RelativeToolTip": "Pages\\ReimbursementRequest.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T09:11:37.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyPolicy.razor",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\CompanyPolicy.razor",
+              "RelativeDocumentMoniker": "Pages\\CompanyPolicy.razor",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\CompanyPolicy.razor",
+              "RelativeToolTip": "Pages\\CompanyPolicy.razor",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAALAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T07:31:41.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReimbursementS.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementS.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementS.razor.cs",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementS.razor.cs",
+              "RelativeToolTip": "Pages\\ReimbursementS.razor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:19:24.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReimbursementHistory.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementHistory.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementHistory.razor.cs",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementHistory.razor.cs",
+              "RelativeToolTip": "Pages\\ReimbursementHistory.razor.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:37:09.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReimbursementHistory.razor",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementHistory.razor",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementHistory.razor",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementHistory.razor",
+              "RelativeToolTip": "Pages\\ReimbursementHistory.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T04:36:52.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReimbursementRequest.razor.cs",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementRequest.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementRequest.razor.cs",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementRequest.razor.cs",
+              "RelativeToolTip": "Pages\\ReimbursementRequest.razor.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:44:12.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReimbursementS.razor",
+              "DocumentMoniker": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementS.razor",
+              "RelativeDocumentMoniker": "Pages\\ReimbursementS.razor",
+              "ToolTip": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\Pages\\ReimbursementS.razor",
+              "RelativeToolTip": "Pages\\ReimbursementS.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T06:39:27.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

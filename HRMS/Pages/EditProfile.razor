@@ -1,0 +1,276 @@
+﻿@page "/editprofile"
+
+@using HRMS.Components
+@inherits BaseComponents
+
+<MudDialog>
+    <DialogContent>
+        <MudForm @ref="form" @bind-IsValid="@success" @bind-Errors="@errors">
+            <MudGrid Spacing="3">
+              
+                    <MudItem lg="11" md="11" sm="11" xs="10">
+                        <MudText Typo="Typo.h4">Bio-Data</MudText>
+                    </MudItem>
+                    <MudItem lg="1" md="1" sm="1" xs="2">
+                        <MudIconButton Icon="@Icons.Material.Filled.Close" Color="@MudBlazor.Color.Error" OnClick="Cancel"></MudIconButton>
+                    </MudItem>
+                    <MudGrid>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>First Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.Firstname1" Placeholder="Name" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Phone Number</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                                <MudTextField  @bind-Value="@profie.Mobilenumber1" Placeholder="Phone Number" Variant="Variant.Outlined" Margin="Margin.Dense" Adornment="Adornment.Start" AdornmentText="+91"  For="(()=>biodata.MobileNumber)"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Experience</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField Placeholder="Experience" @bind-Value="@profie.Experience" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Role</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Role1" Placeholder="Role" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Nationality</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Nationality1" Placeholder="Nationality" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Last Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Lastname1" Placeholder="Last Name" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Mail Id</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Email1" Placeholder="Email" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Marital Status</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Maritalstatus1" Placeholder="Marital Status" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText Class="my-1">Designation</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Designation1" Placeholder="Designation" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText Class="my-1">Date of Birth</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Dateofbirth1" Placeholder="Date of Birth" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly></MudTextField>
+                            </MudItem>
+
+                        </MudItem>
+                    <MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end">
+                        <MudButton Variant="Variant.Filled" Color="@MudBlazor.Color.Success" OnClick="Editput1"> Update</MudButton>
+                    </MudItem>
+                    </MudGrid>
+                
+             
+
+                    <MudItem lg="12" md="12" sm="12" xs="12">
+                        <MudText Typo="Typo.h4">Education Information</MudText>
+                    </MudItem>
+                    <MudGrid>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>PG College Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.Pgcollegename1" Placeholder="PG College" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>PG Start Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Pgstartdate1" Placeholder="PG startDate" Variant="Variant.Outlined"  Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>PG Course Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.Pgcoursename1" Placeholder="PG CourseName" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>PG End Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Pgenddate1" Placeholder="PG EndDate" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>UG College Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.Ugcollagename1" Placeholder="UG CollegeName" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>UG Start Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Ugstartdate1" Placeholder="UG StartDate" Variant="Variant.Outlined"  Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>UG Course Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Ugcoursename1" Placeholder="UG CourseName" Variant="Variant.Outlined"  Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>UG End Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Ugenddate1" Placeholder="UG EndDate" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>HSC School Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.HSCschoolname1" Placeholder="HSC SchoolName" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>HSC Start Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.HSCstartdate1" Placeholder="HSC StartDate" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>HSC Course Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.HSCcoursename1" Placeholder="HSC CourseName" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>HSC End Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.HSCenddate1" Placeholder="HSC EndDate" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>SSLC School Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.SSLCschoolname1" Placeholder="SSLC SchoolName" Variant="Variant.Outlined" Margin="Margin.Dense" 
+                            ></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>SSLC Start Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.SSLCstartdate1" Placeholder="SSLC StartDate" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>SSLC End Date</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.SSLCenddate1" Placeholder="SSLC EndDate" Variant="Variant.Outlined" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>RelationShip</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField T="string" @bind-Value="@profie.Relationship1" Placeholder="Relationship" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Emergency Contact Number</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12" Class="mb-6">
+                            <MudTextField @bind-Value="@profie.Emergencycontact1" Placeholder="Emergency Contact" Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentText="+91" Margin="Margin.Dense" ></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                    <MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end">
+                        <MudButton Variant="Variant.Filled" Color="@MudBlazor.Color.Success" OnClick="Editput2"> Update</MudButton>
+                    </MudItem>
+                    </MudGrid>
+                
+
+
+
+                    <MudItem lg="12" md="12" sm="12" xs="12">
+                        <MudText Typo="Typo.h4">Bank Account Information</MudText>
+                    </MudItem>
+                    <MudGrid>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Bank Name</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                            <MudTextField Placeholder="Bank Name" T="string" @bind-Value="@profie.Bankname1" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>Account Number</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                            <MudTextField Placeholder="Account Number" T="string" @bind-Value="@profie.Accountnumber1" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+                        <MudItem lg="6" md="6" sm="6" xs="12">
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>PF Account Number</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                            <MudTextField Placeholder="PF Account Number" T="string" @bind-Value="@profie.Pfaccount1" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                                <MudText>IFSC code</MudText>
+                            </MudItem>
+                            <MudItem lg="12" md="12" sm="12" xs="12">
+                            <MudTextField Placeholder="IFSC code" T="string" @bind-Value="@profie.Ifsccode1" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+                            </MudItem>
+                        </MudItem>
+
+                    </MudGrid>
+                    
+
+                    <MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end">
+                    <MudButton Variant="Variant.Filled" Color="@MudBlazor.Color.Success" OnClick="Editput3"> Update</MudButton>
+                </MudItem>
+
+            </MudGrid>
+        </MudForm>
+
+    </DialogContent>
+   
+</MudDialog>

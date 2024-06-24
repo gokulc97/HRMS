@@ -1,0 +1,83 @@
+﻿@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@page "/EmployeeBankDetails"
+@inject ISnackbar Snackbar
+
+<div class="container">
+	<MudContainer>
+		<MudText Typo="Typo.h4" Class="my-10 d-flex">
+			Employee Onboarding Form
+
+			<MudSpacer />
+		</MudText>
+	</MudContainer>
+
+
+	<MudPaper>
+		<MudForm @ref="form">
+			<MudContainer>
+				<MudText Typo="Typo.h4" Class="d-flex justify-content-center align-content-center my-2">Employee Account Details</MudText>
+				<MudGrid>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Salary<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Salary" Margin="Margin.Dense" Placeholder="Salary" For="()=>obj3.Salary"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Bank Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Bankname" Margin="Margin.Dense" Placeholder="Bank Name" For="()=>obj3.Bankname"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1"> Bank Account Number<span class="requriedcolor">*</span></MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.AccountNumber" Margin="Margin.Dense" Placeholder="Account number" For="()=>obj3.AccountNumber"></MudTextField>
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">IFSC Code <span class="requriedcolor">*</span> </MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.Ifsccode" Margin="Margin.Dense" Placeholder="IFSC Code" For="()=>obj3.Ifsccode"></MudTextField>
+					</MudItem>
+
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">PF Account Number </MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj3.pfaccountnumber" Margin="Margin.Dense" Placeholder="PF Account Number" For="()=>obj3.pfaccountnumber"></MudTextField>
+					</MudItem>
+
+
+
+					<MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end">
+						<MudButton Variant="Variant.Outlined" Class="d-flex justify-content-center align-content-center" Color="@MudBlazor.Color.Primary" Disabled="@(!success)" OnClick="onclick">SUBMIT</MudButton>
+					</MudItem>
+				</MudGrid>
+			</MudContainer>
+		</MudForm>
+	</MudPaper>
+</div>
+@code {
+	Onboardingform obj3 = new Onboardingform();
+	MudForm form;
+	bool success;
+
+	void onclick()
+	{
+		NavigationManager.NavigateTo("/dash");
+		Snackbar.Add("Form Submitted Successfully", Severity.Success);
+	}
+
+	private async Task GoBack()
+	{
+		await JSRuntime.InvokeVoidAsync("history.back");
+	}
+
+}
+<style>
+	@@media Screen and(max-width:767px) {
+		.headingtitle {
+			font-size: 8px;
+		}
+	}
+
+	.requriedcolor {
+		color: red;
+		margin-left: 5px;
+	}
+</style>
+

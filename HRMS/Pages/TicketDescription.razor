@@ -1,0 +1,132 @@
+﻿@page "/ticketdescription"
+
+<MudDialog>
+    <DialogContent>
+
+        <MudGrid Class="DialogHeader">
+            <MudItem lg="6" md="6" sm="6" xs="12">
+                <MudText Typo="Typo.h4">Ticket Details</MudText>
+            </MudItem>
+            <MudItem lg="6" md="6" sm="6" xs="12" Class="d-flex justify-content-end align-content-end">
+                <MudIconButton Icon="@Icons.Material.Filled.Close" Color="@MudBlazor.Color.Error" OnClick="Cancel"></MudIconButton>
+            </MudItem>
+        </MudGrid>
+        
+        <MudGrid Class="mb-5">
+            <MudItem lg="3" md="3" sm="4" xs="6">
+                <MudCard>
+                    <MudGrid>
+                        <MudItem lg="4" md="4" sm="4" xs="4" Class="ml-4 mt-3">
+                            <i class="fa-solid fa-spinner fa-2xl" style="color: #322cdd;"></i>
+                        </MudItem>
+                        <MudItem lg="5" md="8" sm="8" xs="8">
+                            <MudText Typo="Typo.subtitle1">Status</MudText>
+                            <MudText Typo="Typo.overline">In Progress</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudCard>
+            </MudItem>
+            <MudItem lg="3" md="3" sm="4" xs="6">
+                <MudCard>
+                    <MudGrid>
+                        <MudItem lg="4" md="4" sm="4" xs="4" Class="ml-4 mt-3">
+                            <i class="fa-solid fa-user fa-2xl" style="color: #322cdd;"></i>
+                        </MudItem>
+                        <MudItem lg="6" md="8" sm="8" xs="8">
+                            <MudText Typo="Typo.subtitle1">Created By</MudText>
+                            <MudText Typo="Typo.overline">Mithun Selvan</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudCard>
+            </MudItem>
+            <MudItem lg="3" md="3" sm="4" xs="6">
+                <MudCard>
+                    <MudGrid>
+                        <MudItem lg="4" md="4" sm="4" xs="4" Class="ml-4 mt-3">
+                            <i class="fa-solid fa-calendar-days fa-2xl" style="color: #322cdd;"></i>
+                        </MudItem>
+                        <MudItem lg="7" md="8" sm="8" xs="8">
+                            <MudText Typo="Typo.subtitle1">Created Date</MudText>
+                            <MudText Typo="Typo.overline">05 Mar 2024</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudCard>
+            </MudItem>
+            <MudItem lg="3" md="3" sm="4" xs="6">
+                <MudCard>
+                    <MudGrid>
+                        <MudItem lg="4" md="4" sm="4" xs="4" Class="ml-4 mt-3">
+                            <MudIcon Icon="@Icons.Material.Filled.Error" Size="@MudBlazor.Size.Large" Color="@MudBlazor.Color.Primary" />
+                        </MudItem>
+                        <MudItem lg="7" md="8" sm="8" xs="8">
+                            <MudText Typo="Typo.subtitle1">Priority</MudText>
+                            <MudText Typo="Typo.overline">High</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+        <MudItem lg="12" md="12" sm="12" xs="12">
+            <MudItem lg="12" md="12" sm="12" xs="12">
+                <MudText>Ticket Description</MudText>
+            </MudItem>
+            <MudTextField T="string" Lines="8" Variant="Variant.Outlined" />
+        </MudItem>
+
+        @* Attached Files *@
+        <MudItem Class="mt-5">
+            <MudText>Attached Files</MudText>
+        </MudItem>
+        <MudItem lg="6" md="6" sm="6" xs="12" Class="mt-5">
+            <MudCard>
+                <MudGrid Class="ml-2 mt-2">
+                    @foreach (var i in FileAtach)
+                    {
+                        <MudItem lg="2" md="2" sm="2" xs="2">
+                            <MudImage />
+                            <i class="fa-regular fa-image fa-2xl mt-2"></i>
+                        </MudItem>
+                        <MudItem lg="5" md="5" sm="5" xs="5">
+                            <MudText>@i.imagename</MudText>
+                        </MudItem>
+                        <MudItem lg="5" md="5" sm="5" xs="5">
+                            <MudButton StartIcon="@Icons.Material.Filled.Download" Variant="Variant.Outlined">Download</MudButton>
+                        </MudItem>
+                    }
+                </MudGrid>
+            </MudCard>
+        </MudItem>
+        <MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex justify-content-end align-content-end my-5">
+            <MudButton OnClick="Cancel" Color="@MudBlazor.Color.Primary" Variant="Variant.Filled">Close</MudButton>
+        </MudItem>
+    </DialogContent>
+</MudDialog>
+
+
+
+@code {
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+
+    void Submit() => MudDialog.Close(DialogResult.Ok(true));
+    void Cancel() => MudDialog.Cancel();
+}
+
+@code {
+    List<AttachedFiles> FileAtach = new List<AttachedFiles>
+    {
+        new AttachedFiles{imagename="Image782237.jpg"},
+        new AttachedFiles{imagename="Image782238.jpg"},
+        new AttachedFiles{imagename="Image782236.jpg"},
+        new AttachedFiles{imagename="Image782235.jpg"},
+        new AttachedFiles{imagename="Image782234.jpg"},
+
+    };
+
+    List<TicketDescription1> TicketDescryp = new List<TicketDescription1>
+    {
+      new TicketDescription1{Icon="", Heading="Status",StatusMethod="In Progress"},
+      new TicketDescription1{Heading="Created By",StatusMethod="Mithun Selvan"},
+      new TicketDescription1{Heading="Created Date",StatusMethod="05 Mar 2024 "},
+      new TicketDescription1{Heading="Priority",StatusMethod="High"},
+    };
+}

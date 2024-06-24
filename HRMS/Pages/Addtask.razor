@@ -1,0 +1,47 @@
+﻿<MudDialog Class="height1">
+    <DialogContent>
+        <MudContainer Style="max-height:500px">
+            <MudItem Class="d-flex">
+                <MudText Typo="Typo.h4">Add Task</MudText>
+                <MudSpacer />
+                <MudIconButton Icon="@Icons.Material.Filled.Close" Color="@MudBlazor.Color.Error" OnClick="Cancel" />
+            </MudItem>
+            <MudGrid>
+                <MudItem lg="12" md="12" sm="12" xs="12">
+                    <MudText>Task Name:</MudText>
+                    <MudTextField T="string" Placeholder="Enter Task Name" Variant="Variant.Outlined" Margin="Margin.Dense" />
+                </MudItem>
+                <MudItem lg="12" md="12" sm="12" xs="12">
+                    <MudText>Due Date:</MudText>
+                    <MudDatePicker Margin="Margin.Dense" @bind-Date="add.Date" Placeholder="Select Due Date" DateFormat="dd/MM/yyyy" Color="@MudBlazor.Color.Info" PickerVariant="PickerVariant.Dialog" Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem lg="12" md="12" sm="12" xs="12">
+                    <MudText>Select Members:</MudText>
+                    <MudAutocomplete Margin="Margin.Dense" T="string" Placeholder="Select Members" @bind-Value="add.Name" SearchFunc="@Search1" Variant="Variant.Outlined" />
+                </MudItem>
+                <MudItem lg="12" md="12" sm="12" xs="12" Class="d-flex">
+                    @foreach (var x in avatar)
+                    {
+                        <MudAvatar Image=@x.Path />
+                        <MudText Class="mx- mt-2">@x.Members</MudText>
+                    }
+                </MudItem>
+                <MudItem lg="12" md="12" sm="12" xs="12">
+                    <MudButton Class="buttonstyle subbtn float-end mb-4">Submit</MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </DialogContent>
+</MudDialog>
+
+
+<style>
+    .subbtn {
+        width: 100px;
+    }
+
+    .height1 {
+        overflow-y: hidden;
+        max-height: 500px;
+    }
+</style>

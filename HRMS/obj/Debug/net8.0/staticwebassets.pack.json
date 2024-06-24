@@ -1,0 +1,173 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\obj\\Debug\\net8.0\\compressed\\0ri93jvmpd.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HRMS.styles.css",
+      "PackagePath": "staticwebassets\\HRMS.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\Print.js",
+      "PackagePath": "staticwebassets\\Print.js"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Profile\\Profile\\BytesLogo.png",
+      "PackagePath": "staticwebassets\\images\\Profile\\Profile\\BytesLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Profile\\Profile\\profile.jpeg",
+      "PackagePath": "staticwebassets\\images\\Profile\\Profile\\profile.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Project\\lead1.webp",
+      "PackagePath": "staticwebassets\\images\\Project\\lead1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Project\\member1.cms",
+      "PackagePath": "staticwebassets\\images\\Project\\member1.cms"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Project\\member2.jpg",
+      "PackagePath": "staticwebassets\\images\\Project\\member2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Project\\member3.jpg",
+      "PackagePath": "staticwebassets\\images\\Project\\member3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\Project\\member4.jpg",
+      "PackagePath": "staticwebassets\\images\\Project\\member4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\appbar\\BytesTech.png",
+      "PackagePath": "staticwebassets\\images\\appbar\\BytesTech.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\appbar\\BytesTech1.png",
+      "PackagePath": "staticwebassets\\images\\appbar\\BytesTech1.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\appbar\\logo.png",
+      "PackagePath": "staticwebassets\\images\\appbar\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\appbar\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\appbar\\profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\attendance\\female.jpg",
+      "PackagePath": "staticwebassets\\images\\attendance\\female.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\attendance\\male.jpg",
+      "PackagePath": "staticwebassets\\images\\attendance\\male.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\dashboard\\profile.png",
+      "PackagePath": "staticwebassets\\images\\dashboard\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\employee.png",
+      "PackagePath": "staticwebassets\\images\\employee.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\employee1.png",
+      "PackagePath": "staticwebassets\\images\\employee1.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\emptycardimage.jpg",
+      "PackagePath": "staticwebassets\\images\\emptycardimage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\emptycardimage1.jpg",
+      "PackagePath": "staticwebassets\\images\\emptycardimage1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\iconimage.png",
+      "PackagePath": "staticwebassets\\images\\iconimage.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\imageiconboy.png",
+      "PackagePath": "staticwebassets\\images\\imageiconboy.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\division_6186242.png",
+      "PackagePath": "staticwebassets\\images\\payroll\\division_6186242.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\employeeavatar.png",
+      "PackagePath": "staticwebassets\\images\\payroll\\employeeavatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\payroll.png",
+      "PackagePath": "staticwebassets\\images\\payroll\\payroll.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\pngwing.com.png",
+      "PackagePath": "staticwebassets\\images\\payroll\\pngwing.com.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\request.png",
+      "PackagePath": "staticwebassets\\images\\payroll\\request.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\images\\payroll\\vecteezy_business-woman-isolated-illustration_24354297.jpg",
+      "PackagePath": "staticwebassets\\images\\payroll\\vecteezy_business-woman-isolated-illustration_24354297.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HRMS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HRMS.props",
+      "PackagePath": "build\\HRMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HRMS.props",
+      "PackagePath": "buildMultiTargeting\\HRMS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HRMS.props",
+      "PackagePath": "buildTransitive\\HRMS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

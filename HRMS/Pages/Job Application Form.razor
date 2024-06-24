@@ -1,0 +1,159 @@
+﻿@inject IJSRuntime JSRuntime
+@inject ISnackbar Snackbar
+@page "/jobapplication"
+@layout EmptyLayout
+<div class="container">
+
+	<MudGrid Class="d-flex" Style="margin: unset; flex-wrap:wrap-reverse">
+		<MudItem>
+			<MudText><h1 class="Pagetitle">Job Application </h1></MudText>
+		</MudItem>
+
+		<MudSpacer />
+
+		<MudItem Class="m-2" Style="align-content:center;  flex-wrap: wrap;">
+			<MudButton Variant="Variant.Filled" Class="buttonstyle m-1" @onclick="GoBack">
+				<i class="fa-solid fa-angle-left"></i>
+			</MudButton>
+
+			<MudButton Variant="Variant.Filled" Class="buttonstyle m-1" Disabled="@(!success)">Apply</MudButton>
+		</MudItem>
+
+	</MudGrid>
+
+	<MudPaper Class="papercolor my-5">
+		<MudForm @ref="form" @bind-IsValid="@success">
+			<MudContainer>
+				<MudGrid>
+					<MudItem lg="4" md="4" sm="4" xs="12">
+						<MudText Typo="Typo.subtitle1"> First Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Placeholder="First Name" Variant="Variant.Outlined" @bind-Value="@obj1.FirstName" For="(()=>obj1.FirstName)" Required="true" Class="textborder" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="4" md="4" sm="4" xs="12">
+						<MudText Typo="Typo.subtitle1">Middle Name</MudText>
+						<MudTextField Placeholder="Middle Name" Variant="Variant.Outlined" @bind-Value="@obj1.MiddleName" For="(()=>obj1.MiddleName)" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="4" md="4" sm="4" xs="12">
+						<MudText Typo="Typo.subtitle1">Last Name<span class="requriedcolor">*</span></MudText>
+						<MudTextField Placeholder="Last Name" Variant="Variant.Outlined" @bind-Value="@obj1.LastName" For="(()=>obj1.LastName)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Email Address<span class="requriedcolor">*</span></MudText>
+						<MudTextField Placeholder="Email Address" Variant="Variant.Outlined" @bind-Value="@obj1.Email" For="(()=>obj1.Email)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Moblie Number<span class="requriedcolor">*</span></MudText>
+						<MudTextField Placeholder="Moblie Number" Variant="Variant.Outlined" @bind-Value="@obj1.PhoneNumber" AdornmentText="+91" Adornment="Adornment.Start" For="(()=>obj1.PhoneNumber)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="12" md="12" sm="12" xs="12">
+						<MudText Typo="Typo.subtitle1">Address</MudText>
+						<MudTextField Lines="4" Placeholder="Address" @bind-Value="@obj1.Address" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">City</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj1.City" Placeholder="City" For="(()=>obj1.City)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">State</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj1.state" Placeholder="State" For="(()=>obj1.state)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Pin Code</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj1.pinCode" Placeholder="Pin Code" For="(()=>obj1.pinCode)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Country</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="@obj1.country" Placeholder="Country" For="(()=>obj1.country)" Required="true" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Position<span class="requriedcolor">*</span></MudText>
+						<MudSelect Dense="true" T="string" Placeholder="Position" Variant="Variant.Outlined" @bind-Value="@obj1.position" Required="true" Margin="Margin.Dense">
+							@foreach (var x in position)
+							{
+								<MudSelectItem Value="@(x.position)" />
+							}
+						
+							
+						</MudSelect>
+					</MudItem>
+					<MudItem lg="6" md="6" sm="6" xs="12">
+						<MudText Typo="Typo.subtitle1">Referal Id(Opitional)</MudText>
+						<MudTextField Variant="Variant.Outlined" @bind-Value="obj1.Referalid" Placeholder="Referal Id" Margin="Margin.Dense"></MudTextField>
+					</MudItem>
+
+					<MudItem lg="12" md="12" sm="12" xs="12">
+						<MudText Typo="Typo.subtitle1" Class="headingtext1 my-3">Upload Your Resume</MudText>
+
+
+						<MudFileUpload T="IBrowserFile" Required="true">
+							<ButtonTemplate>
+								<MudButton HtmlTag="label"
+										   Variant="Variant.Outlined"
+										   for="@context.Id">
+
+									Upload Resume
+								</MudButton>
+							</ButtonTemplate>
+							<SelectedTemplate>
+								@if (context != null)
+								{
+									<MudText>@context.Name</MudText>
+								}
+
+							</SelectedTemplate>
+						</MudFileUpload>
+
+					</MudItem>
+					<MudItem lg="12" md="12" sm="12" xs="12">
+						<MudCheckBox @bind-Checked="@ok" Required="true">
+							<MudText>Please Accept the Terms and Condition</MudText>
+						</MudCheckBox>
+					</MudItem>
+					
+				</MudGrid>
+			</MudContainer>
+		</MudForm>
+	</MudPaper>
+</div>
+
+
+@code {
+	JobApplicationForm obj1 = new JobApplicationForm();
+	public bool ok { get; set; } = false;
+	MudForm form;
+	bool success;
+
+
+	private async Task GoBack()
+	{
+		await JSRuntime.InvokeVoidAsync("history.back");
+	}
+	void onclick2()
+	{
+		Snackbar.Add("Your Application Submitted Successfully", Severity.Success);
+	}
+	List<JobApplicationForm> position = new List<JobApplicationForm>
+	{
+		new JobApplicationForm{position="Developer"},
+		new JobApplicationForm{position="sales Manager"},
+		new JobApplicationForm{position="Hr"},
+		new JobApplicationForm{position="Devops Engineer"},
+		new JobApplicationForm{position="TL"},
+	};
+}
+<style>
+	.headingtext1 {
+		margin-bottom: -5px;
+		margin-left: 5px;
+	}
+
+	.headingtext2 {
+		margin-bottom: -5px;
+		margin-left: 5px;
+	}
+
+	.requriedcolor {
+		color: red;
+		margin-left: 5px;
+	}
+</style>

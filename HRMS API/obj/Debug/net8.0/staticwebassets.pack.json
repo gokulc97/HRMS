@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406041715_Screenshot 2024-06-04 154329.png",
+      "PackagePath": "staticwebassets\\uploads\\202406041715_Screenshot 2024-06-04 154329.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406071447_VP.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406071447_VP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406081518_iD3mLFQm_400x400-removebg-preview.png",
+      "PackagePath": "staticwebassets\\uploads\\202406081518_iD3mLFQm_400x400-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101204_AIADMK logo.png",
+      "PackagePath": "staticwebassets\\uploads\\202406101204_AIADMK logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101209_ap3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406101209_ap3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101255_Volunteer.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406101255_Volunteer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101317_Volunteer.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406101317_Volunteer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101644_Do Something Orga (4).png",
+      "PackagePath": "staticwebassets\\uploads\\202406101644_Do Something Orga (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101651_Do Something Orga (4).png",
+      "PackagePath": "staticwebassets\\uploads\\202406101651_Do Something Orga (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406101657_Volunteer.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406101657_Volunteer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406111105_Volunteer.jpg",
+      "PackagePath": "staticwebassets\\uploads\\202406111105_Volunteer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gokul\\Desktop\\HRMS 11-06 (Final)\\HRMS\\HRMS API\\wwwroot\\uploads\\202406131007_payslip.pdf",
+      "PackagePath": "staticwebassets\\uploads\\202406131007_payslip.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HRMS API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HRMS API.props",
+      "PackagePath": "build\\HRMS API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HRMS API.props",
+      "PackagePath": "buildMultiTargeting\\HRMS API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HRMS API.props",
+      "PackagePath": "buildTransitive\\HRMS API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
